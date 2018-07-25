@@ -1,0 +1,56 @@
+.mod-vid {
+  padding: 20px 20px 76px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  width: calc(33.33% - 30px);
+  margin: 0 15px 30px;
+  float: left;
+  transition: width 0.5s ease-in-out;
+  min-height: 190px;
+  overflow: hidden;
+  .content {
+    h3 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  .btn-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left:0;
+    right: 0;
+    text-align: center;
+    z-index:1;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  &.playing {
+    padding: 0 0 calc(56.25% - 15px) 0;
+    width: calc(100% - 30px);
+    height: auto;
+    position: relative;
+    .content {
+      display: none;
+    }
+    video {
+      z-index: 1;
+      opacity: 1;
+    }
+    .btn-wrapper {
+      display: none;
+    }
+  }
+}

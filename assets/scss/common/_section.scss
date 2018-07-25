@@ -1,0 +1,56 @@
+section {
+  padding: 60px 0;
+  position: relative;
+  background-size: cover;
+  h2.line {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    &:before {
+      border-top: 2px solid $dark;
+      content:"";
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+    }
+    span {
+      background: #fff;
+      padding: 0 15px;
+    }
+  }
+  &.alt {
+    background: #f4f4f4;
+    h2.line {
+      &:before {
+        border-color: $dark;
+      }
+      span {
+        background: #f4f4f4;
+      }
+    }
+  }
+  &.bg-green {
+    color: #fff;
+    background: $green;
+    h2.line {
+      color: #fff;
+      &:before {
+        border-color: #fff;
+      }
+      span {
+        background: $green;
+      }
+    }
+  }
+  .white {
+    h2, p, a {
+      color: #fff;
+    }
+  }
+}

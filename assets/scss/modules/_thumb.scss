@@ -1,0 +1,33 @@
+.roundthumb {
+  text-align: center;
+  margin-bottom: 30px;
+  img {
+    display: block;
+    border-radius: 300px;
+    width: 60%;
+    height: auto;
+    margin: 0 auto 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+  }
+  h3 {
+    font-size: 22px;
+    margin: 0;
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
+.squarethumb {
+  margin-bottom: 30px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.squarethumb:hover {
+  opacity: 0.6;
+}

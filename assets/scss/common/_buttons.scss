@@ -1,0 +1,28 @@
+
+a[href]:not(.btn):not(.item) {
+  text-decoration: underline;
+  color: $dark;
+  &:hover {
+    color: $green;
+  }
+}
+.btn.btn-outline-light, .btn.btn-outline-primary {
+  border-radius: 0;
+  text-transform: uppercase;
+  border-width: 2px;
+  font-weight: 600;
+  height: 42px;
+  line-height: 38px;
+  padding: 0 15px;
+}
+.btn.btn-outline-light:hover {
+  color: $dark;
+}
+.btn.btn-outline-primary {
+  color: $dark;
+  border-color: $dark;
+}
+.btn.btn-outline-primary:hover {
+  color: #fff;
+  background: $dark;
+}
